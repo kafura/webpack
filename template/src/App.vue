@@ -1,24 +1,19 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    {{#router}}
+
+    <div>
+      <router-link :to="{ name: 'HelloWorld' }">HelloWorld</router-link>
+      <router-link :to="{ name: 'HelloHepper' }">HelloHepper</router-link>
+    </div>
+
     <router-view/>
-    {{else}}
-    <HelloWorld/>
-    {{/router}}
   </div>
 </template>
 
 <script>
-{{#unless router}}
-import HelloWorld from './components/HelloWorld';
-
-{{/unless}}
 export default {
-  name: 'app'{{#router}}{{else}},
-  components: {
-    HelloWorld
-  }{{/router}}
+  name: 'app'
 };
 </script>
 
