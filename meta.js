@@ -54,14 +54,14 @@ module.exports = {
       "message": "Pick a test runner",
       "choices": [
         {
-          "name": "Jest",
-          "value": "jest",
-          "short": "jest"
-        },
-        {
           "name": "Karma and Mocha",
           "value": "karma",
           "short": "karma"
+        },
+        {
+          "name": "Jest",
+          "value": "jest",
+          "short": "jest"
         },
         {
           "name": "none (configure it yourself)",
@@ -72,10 +72,8 @@ module.exports = {
     }
   },
   "filters": {
-    ".eslintrc.js": "lint",
-    ".eslintignore": "lint",
     "config/test.env.js": "unit",
-    "build/webpack.test.conf.js": "e2e || (unit && runner === 'karma')",
+    "build/webpack.test.conf.js": "unit && runner === 'karma'",
     "test/unit/**/*": "unit",
     "test/unit/index.js": "unit && runner === 'karma'",
     "test/unit/jest.conf.js": "unit && runner === 'jest'",
