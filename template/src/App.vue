@@ -27,3 +27,7 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<style lang="scss">
+  @import './scss/main.scss';
+</style>

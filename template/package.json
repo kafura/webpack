@@ -49,6 +49,8 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
     "webpack-bundle-analyzer": "^2.9.0",
     {{#if_eq runner "jest"}}
     "babel-jest": "^21.0.2",
