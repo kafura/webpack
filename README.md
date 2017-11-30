@@ -24,6 +24,9 @@ $ npm run dev
 The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 
 ## What's Included
+- Features
+  - scss support
+  - vue-router installed
 
 - `npm run dev`: first-in-class development experience.
   - Webpack + `vue-loader` for single file Vue components.
