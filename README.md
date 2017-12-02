@@ -26,6 +26,7 @@ The development server will run on port 8080 by default. If that port is already
 ## What's Included
 - Features
   - scss support
+  - [bulma](https://bulma.io)
   - vue-router installed
 
 - `npm run dev`: first-in-class development experience.
