@@ -22,7 +22,8 @@ $ npm run dev
 ```
 
 ``` bash
-# This one does almost everything in a single line, and also opens visual studio code
+# This one does almost everything in a single line, and also opens Visual Studio Code
+# Remember to change "my-project" both places.
 $ vue init kafura/webpack my-project && cd my-project && npm install && code . && npm run dev
 ```
 
