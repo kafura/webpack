@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="hero-foot">
-        <div class="conainer">
+        <div class="container">
           <nav class="tabs is-boxed">
             <ul>
               <li><router-link :to="{ name: 'HelloWorld' }" active-class="is-active">HelloWorld</router-link></li>
