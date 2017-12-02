@@ -1,7 +1,7 @@
 import { getPosts } from '@/api/jsonplaceholder';
 
-const SET_LOADING = 'set_loading';
-const UPDATE_POSTS = 'update_posts';
+const SET_LOADING = 'SET_LOADING';
+const UPDATE_POSTS = 'UPDATE_POSTS';
 
 const state = {
   loading: false,
