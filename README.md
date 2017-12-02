@@ -21,6 +21,11 @@ $ npm install
 $ npm run dev
 ```
 
+``` bash
+# This one does almost everything in a single line, and also opens visual studio code
+$ vue init kafura/webpack my-project && cd my-project && npm install && code . && npm run dev
+```
+
 The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 
 ## What's Included
