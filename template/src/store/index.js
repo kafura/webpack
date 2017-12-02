@@ -4,6 +4,8 @@ import Vuex from 'vuex';
 import * as actions from './actions';
 import * as getters from './getters';
 
+import jsonplaceholder from './modules/jsonplaceholder';
+
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -11,8 +13,7 @@ const store = new Vuex.Store({
   actions,
   getters,
   modules: {
-    // app,
-    // menu
+    jsonplaceholder
   },
   mutations: {
   }

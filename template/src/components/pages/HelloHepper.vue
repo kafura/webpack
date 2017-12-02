@@ -17,20 +17,28 @@
 
 <script>
   import UiCheckbox from '@/components/ui/UiCheckbox';
-  import { getPosts } from '@/api/jsonplaceholder';
+  import { mapActions, mapGetters } from 'vuex';
 
   export default {
     name: 'HelloHepper',
     components: {
       UiCheckbox
     },
-    data: () => ({
-      posts: []
-    }),
+
+    computed: {
+      ...mapGetters('jsonplaceholder', [
+        'posts'
+      ])
+    },
+
+    methods: {
+      ...mapActions('jsonplaceholder', [
+        'getPosts'
+      ])
+    },
+
     mounted() {
-      getPosts().then(data => {
-        this.posts = data;
-      });
+      this.getPosts();
     }
   };
 </script>
