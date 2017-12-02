@@ -6,6 +6,7 @@
         Essential Links
       </h2>
       <a href="https://bulma.io">Bulma</a>
+      <a href="https://github.com/axios/axios">axios</a>
 
       <div class="columns">
         <div class="column">
