@@ -8,7 +8,7 @@
 
       <div>
         <div v-for="p in posts" :key="p.id">
-          {{ p.title }}
+          \{{ p.title }}
         </div>
       </div>
     </div>
