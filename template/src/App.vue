@@ -1,13 +1,39 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-
-    <div>
-      <router-link :to="{ name: 'HelloWorld' }">HelloWorld</router-link>
-      <router-link :to="{ name: 'HelloHepper' }">HelloHepper</router-link>
-    </div>
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Hero title
+          </h1>
+          <h2 class="subtitle">
+            Hero subtitle
+          </h2>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="conainer">
+          <nav class="tabs is-boxed">
+            <ul>
+              <li><router-link :to="{ name: 'HelloWorld' }" active-class="is-active">HelloWorld</router-link></li>
+              <li><router-link :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <router-view/>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>kafura/webpack</strong> forked from vue-cli/wepback
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -16,17 +42,6 @@ export default {
   name: 'app'
 };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
 
 <style lang="sass">
   @import '../node_modules/bulma/bulma.sass';
