@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
-import HelloHepper from '@/components/HelloHepper';
+import HelloWorld from '@/components/pages/HelloWorld';
+import HelloHepper from '@/components/pages/HelloHepper';
 
 Vue.use(Router);
 

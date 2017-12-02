@@ -5,7 +5,7 @@
       <h2 class="subtitle">
         This makes a call to jsonplaceholder api with axios
       </h2>
-
+      <ui-checkbox>Klik på mig</ui-checkbox>
       <div>
         <div v-for="p in posts" :key="p.id">
           \{{ p.title }}
@@ -16,10 +16,14 @@
 </template>
 
 <script>
+  import UiCheckbox from '@/components/ui/UiCheckbox';
   import { getPosts } from '@/api/jsonplaceholder';
 
   export default {
-    name: 'Hepper',
+    name: 'HelloHepper',
+    components: {
+      UiCheckbox
+    },
     data: () => ({
       posts: []
     }),
