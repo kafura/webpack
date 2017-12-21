@@ -43,10 +43,6 @@ export default {
 };
 </script>
 
-<style lang="sass">
-  @import '../node_modules/bulma/bulma.sass';
-</style>
-
 <style lang="scss">
   @import './scss/main.scss';
 </style>
