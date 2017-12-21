@@ -15,7 +15,7 @@
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <strong>kafura/webpack</strong> forked from vue-cli/wepback
+            <strong><a href="https://github.com/kafura/webpack" target="_blank">kafura/webpack</a></strong> forked from <a href="https://github.com/vuejs-templates/webpack" target="_blank">vue-cli/webpack</a>
           </p>
         </div>
       </div>
