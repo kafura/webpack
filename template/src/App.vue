@@ -1,27 +1,13 @@
 <template>
   <div id="app">
-    <header class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Hero title
-          </h1>
-          <h2 class="subtitle">
-            Hero subtitle
-          </h2>
+    <div class="container">
+      <nav class="tabs">
+        <div class="navbar-brand">
+          <router-link class="navbar-item" :to="{ name: 'HelloWorld' }" active-class="is-active">{{ name }}</router-link>
+          <router-link class="navbar-item" :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link>
         </div>
-      </div>
-      <div class="hero-foot">
-        <div class="container">
-          <nav class="tabs is-boxed">
-            <ul>
-              <li><router-link :to="{ name: 'HelloWorld' }" active-class="is-active">HelloWorld</router-link></li>
-              <li><router-link :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
 
     <router-view/>
 
