@@ -37,6 +37,7 @@ The development server will run on port 8080 by default. If that port is already
   - scss support
   - [bulma](https://bulma.io)
   - [axios](https://github.com/axios/axios)
+  - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
 
 - `npm run dev`: first-in-class development experience.
   - Webpack + `vue-loader` for single file Vue components.
