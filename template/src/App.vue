@@ -4,7 +4,7 @@
       <nav class="tabs">
         <div class="navbar-brand">
           <!-- eslint-disable -->
-          <router-link class="navbar-item" :to="{ name: 'HelloWorld' }" active-class="is-active">\{{ name }}</router-link>
+          <router-link class="navbar-item" :to="{ name: 'HelloWorld' }" active-class="is-active">{{ name }}</router-link>
           <router-link class="navbar-item" :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link>
           <!-- eslint-enable -->
         </div>
