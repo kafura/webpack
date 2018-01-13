@@ -15,8 +15,10 @@
         <div class="container">
           <nav class="tabs is-boxed">
             <ul>
+              <!-- eslint-disable -->
               <li><router-link :to="{ name: 'HelloWorld' }" active-class="is-active">HelloWorld</router-link></li>
               <li><router-link :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link></li>
+              <!-- eslint-enable -->
             </ul>
           </nav>
         </div>
@@ -39,7 +41,7 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 };
 </script>
 

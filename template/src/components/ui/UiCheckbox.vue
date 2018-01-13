@@ -1,7 +1,7 @@
 <template>
   <label class="checkbox">
     <input type="checkbox">
-    <slot></slot>  
+    <slot/>
   </label>
 </template>
 
