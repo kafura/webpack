@@ -1,18 +1,26 @@
 <template>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Hello hepper</h1>
-      <h2 class="subtitle">
-        This makes a call to jsonplaceholder api with axios
-      </h2>
-      <ui-checkbox>Klik på mig</ui-checkbox>
-      <div>
-        <div v-for="p in posts" :key="p.id">
-          \{{ p.title }}
+  <div>
+    <header class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Hello hepper</h1>
+          <h2 class="subtitle">
+            This makes a call to jsonplaceholder api with axios
+          </h2>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
+    <section class="section">
+      <div class="container">
+        <ui-checkbox>Klik på mig</ui-checkbox>
+        <div>
+          <div v-for="p in posts" :key="p.id">
+            {{ p.title }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

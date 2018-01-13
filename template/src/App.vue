@@ -1,29 +1,15 @@
 <template>
   <div id="app">
-    <header class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Hero title
-          </h1>
-          <h2 class="subtitle">
-            Hero subtitle
-          </h2>
+    <div class="container">
+      <nav class="tabs">
+        <div class="navbar-brand">
+          <!-- eslint-disable -->
+          <router-link class="navbar-item" :to="{ name: 'HelloWorld' }" active-class="is-active">{{ name }}</router-link>
+          <router-link class="navbar-item" :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link>
+          <!-- eslint-enable -->
         </div>
-      </div>
-      <div class="hero-foot">
-        <div class="container">
-          <nav class="tabs is-boxed">
-            <ul>
-              <!-- eslint-disable -->
-              <li><router-link :to="{ name: 'HelloWorld' }" active-class="is-active">HelloWorld</router-link></li>
-              <li><router-link :to="{ name: 'HelloHepper' }" active-class="is-active">HelloHepper</router-link></li>
-              <!-- eslint-enable -->
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
 
     <router-view/>
 
@@ -31,7 +17,7 @@
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <strong>kafura/webpack</strong> forked from vue-cli/wepback
+            <strong><a href="https://github.com/kafura/webpack" target="_blank">kafura/webpack</a></strong> forked from <a href="https://github.com/vuejs-templates/webpack" target="_blank">vue-cli/webpack</a>
           </p>
         </div>
       </div>
