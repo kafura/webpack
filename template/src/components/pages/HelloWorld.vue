@@ -3,14 +3,14 @@
     <header class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">{{ msg }}</h1>
+          <h1 class="title">\{{ msg }}</h1>
           <h2 class="subtitle">
             Essential Links
           </h2>
         </div>
       </div>
     </header>
-  
+
     <section class="section">
       <div class="container">
         <a href="https://bulma.io">Bulma</a>
@@ -44,14 +44,14 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    };
-  }
-};
+  export default {
+    name: 'HelloWorld',
+    data() {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      };
+    }
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
