@@ -15,7 +15,7 @@
         <ui-checkbox>Klik på mig</ui-checkbox>
         <div>
           <div v-for="p in posts" :key="p.id">
-            {{ p.title }}
+            \{{ p.title }}
           </div>
         </div>
       </div>
